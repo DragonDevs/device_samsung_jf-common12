@@ -119,5 +119,6 @@ on enable-low-power
 
     # Set iosched
     setprop sys.io.scheduler bfq
+    write /sys/block/mmcblk1/queue/scheduler bfq
 
     rm /data/system/perfd/default_values
